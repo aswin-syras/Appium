@@ -10,8 +10,8 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <appium.version>9.1.0</appium.version> <!-- Appium Java Client version -->
-        <selenium.version>4.27.0</selenium.version> <!-- Selenium version -->
+        <appium.version>8.2.1</appium.version> <!-- Appium Java Client version -->
+        <selenium.version>4.6.0</selenium.version> <!-- Selenium version -->
     </properties>
 
     <dependencies>
@@ -35,6 +35,30 @@
 		    <version>7.9.0</version>
 		    <scope>test</scope>
 		</dependency>
+    <!-- SLF4J binding for Logback -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>1.7.32</version> <!-- Use a compatible version -->
+    </dependency>
+    <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.2.10</version> <!-- Use a compatible version -->
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-api -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-api</artifactId>
+    <version>4.6.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-remote-driver</artifactId>
+    <version>4.6.0</version>
+</dependency>
 
-    </dependencies>
+
+</dependencies>
 </project>

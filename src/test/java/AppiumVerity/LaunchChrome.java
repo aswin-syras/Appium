@@ -34,9 +34,6 @@ public class LaunchChrome{
             // Initialize AndroidDriver
             driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), uiopt);
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
-//            LaunchChrome obj = new LaunchChrome();
-//            obj.CanvasLaunch("panotesting.instructure.com", "aswintest", "Aswinsyras@123");
             // Add your test code here
             System.out.println("App is launched successfully.");
             Thread.sleep(3000);
