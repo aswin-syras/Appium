@@ -23,11 +23,11 @@ public class AppiumTest {
         	
         	UiAutomator2Options uiopt = new UiAutomator2Options();
         	uiopt.setDeviceName("Medium Phone API 35");
-        	uiopt.setApp("")
+        	uiopt.setApp("");
         	
 
             // Make sure this URL is correct
-            AndroidDriver driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
+            AndroidDriver driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), uiopt);
 
             // Your test code here
 
